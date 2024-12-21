@@ -2,7 +2,7 @@ class NaturalMergeSorter:
     def __init__(self):
         return
 
-    def get_sorted_run_length(self, integer_list, start_index):
+    def get_sorted_run_length(self, integer_list, start_index):  
         if start_index < 0 or start_index >= len(integer_list):
             return 0
 
@@ -45,7 +45,6 @@ class NaturalMergeSorter:
                     i = 0
                 else:
                     i = i + run1_length + run2_length
-       # return   # Comment out this line.
 
     def merge(self, numbers, left_first, left_last, right_last):
         merged_size = right_last - left_first + 1
